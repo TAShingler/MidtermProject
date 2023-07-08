@@ -31,24 +31,24 @@ if (typeof jQuery === 'undefined') {
   // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
   // ============================================================
 
-  function transitionEnd() {
-    var el = document.createElement('bootstrap')
+  //function transitionEnd() {
+  //  var el = document.createElement('bootstrap')
 
-    var transEndEventNames = {
-      WebkitTransition : 'webkitTransitionEnd',
-      MozTransition    : 'transitionend',
-      OTransition      : 'oTransitionEnd otransitionend',
-      transition       : 'transitionend'
-    }
+  //  var transEndEventNames = {
+  //    WebkitTransition : 'webkitTransitionEnd',
+  //    MozTransition    : 'transitionend',
+  //    OTransition      : 'oTransitionEnd otransitionend',
+  //    transition       : 'transitionend'
+  //  }
 
-    for (var name in transEndEventNames) {
-      if (el.style[name] !== undefined) {
-        return { end: transEndEventNames[name] }
-      }
-    }
+  //  for (var name in transEndEventNames) {
+  //    if (el.style[name] !== undefined) {
+  //      return { end: transEndEventNames[name] }
+  //    }
+  //  }
 
-    return false // explicit for ie8 (  ._.)
-  }
+  //  return false // explicit for ie8 (  ._.)
+  //}
 
   // https://blog.alexmaccaw.com/css-transitions
   $.fn.emulateTransitionEnd = function (duration) {
