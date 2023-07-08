@@ -36,14 +36,14 @@ namespace MidtermProject {
             // check for empty TextBoxes
             if (String.IsNullOrWhiteSpace(txtBoxFName.Text) || String.IsNullOrWhiteSpace(txtBoxLName.Text) || String.IsNullOrWhiteSpace(txtBoxInitRdg.Text) || 
                 String.IsNullOrWhiteSpace(txtBoxFinRdg.Text) || String.IsNullOrWhiteSpace(txtBoxTax.Text)) {
-                
+
                 // error message if any TextBoxes on Form are empty
-                //ScriptManager.RegisterStartupScript(
-                //    this, 
-                //    GetType(), 
-                //    "script", 
-                //    $"alert('Please make sure all fields are filled out');", 
-                //    true);
+                ScriptManager.RegisterStartupScript(
+                    this,
+                    GetType(),
+                    "script",
+                    $"alert('Please make sure all fields are filled out');",
+                    true);
                 return; //exit method
             }
 
